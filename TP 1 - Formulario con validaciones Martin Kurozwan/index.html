@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Validaciones</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <div class="login">
+        <div class="modoOscuro">
+            <button id="themeToggle" class="switch"></button>
+        </div>
+        
+        <form id="formulario">
+            <h2>Registro</h2>
+            <p><input id="nombre" placeholder="Escriba su nombre aquí" required></p>
+            <p class="error" id="errorNombre"></p>
+        
+            <p><input id="email" placeholder="Escriba su email aquí" required></p>
+            <p class="error" id="emailError"></p>
+        
+            <p><input id="contraseña" type="password" placeholder="Escriba su contraseña aquí" required></p>
+            <p class="error" id="errorContraseña"></p>
+        
+            <p><input id="confirmarContraseña" type="password" placeholder="Repita su contraseña aquí" required></p>
+            <p class="error" id="errorConfirmacionContraseña"></p>
+        
+            <p id="mensaje"></p>
+            <button type="submit">Registrarse</button>
+        </form>
+        
+    </div>
+</body>
+</html>
